@@ -32,4 +32,4 @@ def load_config() -> Config:
     """Loads tokens from environment variables"""
     env = Env()
     env.read_env()
-    return Config(tg_bot=TgBot(token=env.str("BOT_TOKEN")))
+    return Config(tg_bot=TgBot(token=env.str("BOT_TOKEN", "5134876535:AAH0bOUwhzoRPhi07mJQDWeZZRg7qhDHINg")))
